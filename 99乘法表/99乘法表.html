@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			table{
+				margin: 200px auto 0;
+				background-color: #F0E68C;
+				border-collapse: collapse;
+			}
+			th{
+				text-align: left;
+				padding:20px;
+				box-sizing: border-box;
+				border: 1px solid #000000;
+			}
+		</style>
+		<title>九九乘法表</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write('<table>');
+			for(var i=1;i<10;i++){
+				document.write('<tr>');
+				for(var j=1;j<=i;j++){
+					document.write(`<th>${j}*${i}=${i*j}&emsp;</th>`);
+				}
+				document.write('<tr>');
+			}
+			document.write('</table>');
+		</script>
+	</body>
+</html>

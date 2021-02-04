@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./login.css"/>
+    <title>登录页</title>
+</head>
+<body>
+    <div class="login">
+    	<h1>登录页</h1>
+			<div class="input">
+				<input type="text" name="" class="text one" value="" placeholder="请输入用户名" />
+				<input type="password" name="" class="text two" value="" placeholder="请输入密码" />
+				<input type="button" name="" class='in' value="登 录" />
+			</div>
+    </div>
+		<script type="text/javascript">
+			const login = document.getElementsByClassName('login')[0];
+			const arr = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+			let str = '';
+			function randomColor(){
+				str='';
+				for(let i=0;i<6;i++){
+					const num = Math.round(Math.random()*16);
+					str+=arr[num];
+				}
+				login.style.background = '#'+str;
+			}
+			setInterval(randomColor,1000);
+		</script>
+</body>
+</html>
